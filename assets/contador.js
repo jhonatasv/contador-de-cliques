@@ -7,6 +7,6 @@ function contar() {
 
 function zerar() {
     star = 0
-    document.querySelector('.text').innerHTML = `<p>você clicou <mark>${total}</mark></p>`
+    document.querySelector('.text').innerHTML = `você clicou <mark>${total}</mark> &#x1F928`
 }
 
