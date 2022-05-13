@@ -15,6 +15,12 @@ contar.addEventListener('click', () => {
 
 zerar.addEventListener('click', () => {
     star = 0 
+    const img = document.createElement('img')
+    img.setAttribute('id', 'foto')
+
+    if(total >= 20) {
+        img.setAttribute('src', 'assets/img/ronald-anao.png')
+    }
     res.innerHTML = `você clicou <mark>${total}</mark> &#x1F928`
 })
 
