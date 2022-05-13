@@ -20,7 +20,11 @@ zerar.addEventListener('click', () => {
 
     if(total >= 20) {
         img.setAttribute('src', 'assets/img/ronald-anao.png')
+    } else {
+        res.innerHTML += `<p>opa<p>`
     }
+    conteundo.style.textAlign = 'center'
+    conteundo.appendChild(img)
     res.innerHTML = `você clicou <mark>${total}</mark> &#x1F928`
 })
 
