@@ -28,7 +28,7 @@ main {
     font-size: 1.2em;
     padding-top: 100px;
 }
-/*conetiner width: 360px */
+
 .conteiner {
     display: flex;
     flex-direction: column;
@@ -53,6 +53,16 @@ img {
     width: 105px;
     height: 105px;
     margin-top: 13px;
+    position: relative;
+    animation-name: opa;
+    animation-duration: 0.2s;
+}
+
+@keyframes opa {
+ 0% {top: 50px;}
+ 25% {top: 25px;}
+ 50% {top: 15px;}
+ 100% {top: 0;}
 }
 
 button{
