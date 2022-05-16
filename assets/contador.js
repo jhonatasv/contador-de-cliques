@@ -1,46 +1,29 @@
 const contar = document.querySelector('#contar')
 const zerar = document.querySelector('#zerar')
-const res = document.querySelector('#text')
 const conteundo = document.querySelector('#conteundo')
 
 
 let star = 0
 let total = '';
 
-contar.addEventListener('click', () => {
+contar.addEventListener('click', function(){
     total = ++ star
-    res.innerHTML = `<p>O Contador está com <mark>${star}</mark> cliques</p>`
+    conteundo.innerHTML = `<p> O Contador está com <mark>${star}</mark> cliques</p>`
 })
 
 
-zerar.addEventListener('click', () => {
+zerar.addEventListener('click', function() {
     star = 0 
-    const img = document.createElement('img')
-    img.setAttribute('id', 'foto')
-
-    if(total >= 20) {
+    
+    if(total >= 20 && total <= 40) {
+        let img = document.createElement('img')
         img.setAttribute('src', 'assets/img/ronald-anao.png')
+        
+        conteundo.style.textAlign = 'center'
+        conteundo.innerHTML = `<p> Você clicou <mark>${total}</mark> &#x1F928</p>`
+        conteundo.appendChild(img)
     } else {
-        res.innerHTML += `<p>opa<p>`
+
+        conteundo.innerHTML = `<p> Você clicou <mark>${total}</mark> &#x1F928</p>`
     }
-    conteundo.style.textAlign = 'center'
-    conteundo.appendChild(img)
-    res.innerHTML = `você clicou <mark>${total}</mark> &#x1F928`
 })
-
-
-
-
-
-
-// function contar() {
-//     total = ++ star
-//     document.querySelector('.text').innerHTML = `O Contador está com <mark>${star}</mark> cliques`
-// }
-
-// function zerar() {
-//     star = 0
-//     document.querySelector('.text').innerHTML = `você clicou <mark>${total}</mark> &#x1F928`
-// }
-
-
