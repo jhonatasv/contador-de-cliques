@@ -10,8 +10,9 @@ Sobre:
 <br>"Primeiro projeto" desenvolvido durante o Curso de **javaScript**, <br>
 nele efetuei algumas melhoria no Design e implementei a função de guarda quantos clique foi efetuado. e também incluí imagens como premio ao clicar até um certo número
 
-
-<img width="550px" src="https://user-images.githubusercontent.com/88457552/168663055-3871bcd7-e2bc-461c-b940-0de615eb0ea7.PNG">
+<div align="center">
+  <img width="550px" src="https://user-images.githubusercontent.com/88457552/168663055-3871bcd7-e2bc-461c-b940-0de615eb0ea7.PNG">
+</div>
 
 <hr>
 
